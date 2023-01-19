@@ -617,25 +617,8 @@
         });
     });
 </script> -->
-    <!-- End of JQuery Script for a separate Play and Pause Carousel Button -->
 
-    <!-- Begin JQuery Script for single button for Play or Pause -->
-    <script>
-      $(function () {
-        $(".carousel").carousel({ interval: 2000 });
-        $("#carouselButton").click(function () {
-          if ($("#carouselButton").children("i").hasClass("fa-pause")) {
-            $(".carousel").carousel("pause");
-            $("#carouselButton").children("i").removeClass("fa-pause");
-            $("#carouselButton").children("i").addClass("fa-play");
-          } else {
-            $(".carousel").carousel("cycle");
-            $("#carouselButton").children("i").removeClass("fa-play");
-            $("#carouselButton").children("i").addClass("fa-pause");
-          }
-        });
-      });
-    </script>
-    <!-- End of JQuery Script for a single Play or Pause Carousel Button -->
+<!-- connecting with script file saved in JS folder -->
+   <script src="js/scripts.js"></script>
   </body>
 </html>
