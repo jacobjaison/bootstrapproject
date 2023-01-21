@@ -1,4 +1,3 @@
-
  $(function () {
     $(".carousel").carousel({ interval: 2000 });
     $("#carouselButton").on("click",function () {

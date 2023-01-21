@@ -5,7 +5,7 @@ h1, h2, h3 {
   font-family: "Lobster", cursive; }
 
 h2 {
-  color: #3046c5; }
+  color: orange; }
 
 header h2 {
   color: #cec8ff; }
@@ -25,7 +25,7 @@ header h2 {
     background-image: linear-gradient(to right, #5637dd, #3046C5, #60106b); */
   /* Version 2 
     background-image: linear-gradient(to right, #6BD1A0, #E786A1, #5FFB6F); */
-  background-image: linear-gradient(to right, #C86BD1, #5637dd, #FB725F, #3046c5, #60106b);
+  background-image: linear-gradient(to right, #C86BD1, #5637dd, #FB725F, orange, #60106b);
   color: white; }
 
 .row-content {
