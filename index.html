@@ -64,13 +64,27 @@
                 </div>                 -->
 
           <!-- Initiate Reserve Campsite as a Modal Window -->
-          <div class="col-md-4 col-xl-2 mt-4">
+          <!-- Initiate Reserve Campsite Button Based On data* attributes -->
+          <!-- Version 1 -->
+          <!-- <div class="col-md-4 col-xl-2 mt-4">
             <a
               href="#"
               role="button"
               class="btn reserveText text-nowrap btn-lg btn-info"
               data-toggle="modal"
               data-target="#reserveModal"
+            >
+              <i class="fa fa-sign-in"></i> Reserve Campsite</a
+            >
+          </div> -->
+
+          <!-- Initiate the Reserve Campsite Based on Id and not on data* attributes -->
+          <div class="col-md-4 col-xl-2 mt-4">
+            <a
+              href="#"
+              role="button"
+              class="btn reserveText text-nowrap btn-lg btn-info"
+              id="reserveButton"              
             >
               <i class="fa fa-sign-in"></i> Reserve Campsite</a
             >
@@ -84,12 +98,23 @@
     <div id="reserveModal" class="modal fade" role="dialog">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <div class="modal-header bg-info text-white">
+          <!-- Version 1 Modal Header with bg-info and text-white classes -->
+          <!-- <div class="modal-header bg-info text-white">
+            <h3 class="modal-title">Reserve a Campsite</h3>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div> -->
+
+          <!-- Version 2 Modal Header without bg-info and text-white classes
+          Controlling the background and text color through styles.css files-->         
+          <div class="modal-header">
             <h3 class="modal-title">Reserve a Campsite</h3>
             <button type="button" class="close" data-dismiss="modal">
               &times;
             </button>
           </div>
+
           <div class="modal-body">
             <div class="container-fluid">
               <form action="">
@@ -210,14 +235,24 @@
             </li>
           </ul>
           <!-- Login Component Modal -->
+          
           <span class="navbar-text ml-auto">
-            <a
+            <!-- Initiate the Login Modal Component based on data* attributes -->
+            <!-- Version 1 -->
+            <!-- <a
               role="button"
               data-toggle="modal"
               data-target="#loginModal"
               href=""
               ><i class="fa fa-sign-in"></i>Login</a
-            >
+            > -->
+
+            <!-- Initiate the Login Modal Component based on ID and not on data* attributes -->
+            <!-- Version 2 -->
+            <a
+              role="button"
+              id="loginButton"><i class="fa fa-sign-in"></i>Login
+            </a>
           </span>
         </div>
       </div>

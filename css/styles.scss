@@ -3,6 +3,8 @@ $color-secondary: #5637dd;
 $color-pale: #cec8ff;
 $color-mid: #901CAD;
 $color-dark: #60106b;
+$color-teal: #17A2B8;
+$color-white: white;
 $color-black-transparent: rgba(0,0,0,0.5);
 
 $body-font: "Open Sans", sans-seriff;
@@ -83,4 +85,20 @@ header {
     bottom : 0;
     z-index : 100;
 }
+
+#reserveModal {
+    .modal-header {
+        background-color: $color-teal;
+        color: $color-white;
+       
+    }
+}
+
+#loginModal {
+    .modal-header {
+        background-color: $color-mid;
+        color: $color-white;
+    }
+}
+
 
